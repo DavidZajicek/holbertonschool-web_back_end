@@ -5,7 +5,7 @@ export default async function handleProfileSignup(firstName, lastName, filename)
   return Promise.all([
     signUpUser(firstName, lastName).then((value) => ({
       status: 'fulfilled',
-      value: value,
+      value,
     })),
     uploadPhoto(filename).catch((e) => ({
       status: 'rejected',
