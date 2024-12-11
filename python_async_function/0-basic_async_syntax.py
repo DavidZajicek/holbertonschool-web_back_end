@@ -7,7 +7,7 @@ from asyncio import sleep
 import random
 
 
-async def wait_random(max_delay=10.0) -> float:
+async def wait_random(max_delay: float = 10.0) -> float:
     """ docstring """
     delay = random.uniform(0, max_delay)
     sleep(delay)
